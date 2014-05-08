@@ -1,0 +1,13 @@
+<!-- target:MAIN_PAGE_wgadmin_message_inport_outer -->
+<div class="wgadmin-message ac-wgadmin-message-inport-outer">
+	<div ui="type:Form;id:form" >
+	   <div  title="发布渠道" ui='type:Label;id:notice;text:@notice;skin:flat;'></div>
+	   <input name="messageId" type="hidden" ui="type:Hidden;id:messageId;value:@messageId;" />
+	   <input name="publishType" type="hidden" ui="type:Hidden;id:messageType;value:@messageType;" />
+	   
+	   <textarea name="receiver"  ui="type:TextInput;id:receiver;rule:required" cols="30" rows="10"></textarea>
+
+	   <div class="clear"></div>
+	   <div ui="type:SubmitButton;id:saveSubmit;skin:flat">保存</div>
+	</div>
+</div>

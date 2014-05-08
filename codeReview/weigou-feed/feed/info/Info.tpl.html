@@ -1,0 +1,99 @@
+<!-- target: page_weigou_feed_info -->
+<div class="weigou-feed page-weigou-feed-info">
+    <!-- for: ${mapfeeds} as ${feed} -->
+        <div class="ui-row">
+            <div class="ui-feed-box">
+                <div class="ui-feed-box-bd">
+                    <div class="ui-col-3">
+                        <div class="info-item">
+                            <span class="title">索引方式：</span>
+                            <span class="info">${feed.indexType}</span>
+                        </div>
+                    </div>
+                    <div class="ui-col-3">
+                        <div class="info-item">
+                            <span class="title">状态：</span>
+                            <span class="info">${feed.feedStatus}</span>
+                        </div>
+                    </div>
+                    <div class="ui-col-3">
+                        <div class="info-item">
+                            <span class="title">索引包含商品数：</span>
+                            <span class="info">${feed.indexProductCount}</span>
+                        </div>
+                    </div>
+                    <div class="ui-col-3">
+                        <div class="info-item">
+                            <span class="title">更新频率：</span>
+                            <span class="info">${feed.updateFreq} </span> 
+                           <!-- if: ${feed.indexType} == ${constants.INDEX_TYPE['1']} -->
+                               
+                           <span class="set-time">${feed.time}</span>
+                           <span data-ui="id:setTimeBtn;type:Button">设置时间</span>
+                           <!--/if-->
+                           
+                        </div>
+                    </div>
+                    <div class="ui-col-3">
+                        <div class="info-item">
+                            <span class="title">异常信息：</span>
+                            <span class="info">${feed.feedException}</span>
+                        </div>
+                    </div>
+                    <div class="ui-col-3">
+                        <div class="info-item">
+                            <span class="title">更新成功商品数：</span>
+                            <span class="info">${feed.successProductCount}</span>
+                        </div>
+                    </div>
+                    <div class="ui-col-3">
+                        <div class="info-item">
+                            <span class="title"> 商家最后更新时间（FEED文件时间戳：</span>
+                            <span class="info">${feed.merchantLastUpdate}</span>
+                        </div>
+                    </div>
+                    <div class="ui-col-3">
+                        <div class="info-item">
+                            <span class="title">系统最后更新时间：</span>
+                            <span class="info">${feed.systemLastUpdate}</span>
+                        </div>
+                    </div>
+                    <div class="ui-col-3">
+                        <div class="info-item">
+                            <span class="title">更新失败商品数：</span>
+                            <span class="info">${feed.failProductCount}</span>
+                        </div>
+                    </div>
+                    
+                    <div class="ui-col-3">
+                        <div class="info-item">
+                            <span class="title">成功抓取商品数：</span>
+                            <span class="info">${feed.successCatchCount}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- /for -->
+    <div class="ui-row">
+        <span data-ui="id:StartBtn;type:Button">开始索引</span> 
+        <span data-ui="id:CancelBtn;type:Button">取消索引</span>
+    </div>
+    
+    <div class="ui-row">
+         <div class="ui-feed-box">
+            <div class="ui-feed-box-hd">
+                异常信息
+            </div>
+            <div class="ui-feed-box-bd">
+                <div class="list-functional-tab" data-ui-type="Tab" data-ui-id="ListTab"></div>
+                <div id="list-table" class="list-table" data-ui="type:Table;id:ListTable"></div>
+                <div class="list-plus-bar">
+                    <div data-ui="type:Pager;id:ListPager;skin:table-pager"></div>
+                </div>
+                <p>当您修改FEED文件异常后，请到<a href="#/feed/set" class="ui-important">[提交FEED源]</a>页面进行<span class="ui-important">立即更新</span>。如未触发立即更新，系统将在下次读取FEED文件时进行更新。</p>
+            </div>
+        </div>
+    </div>
+   
+</div>

@@ -1,0 +1,118 @@
+<!-- target: page_weigou_feed_index -->
+<div class="weigou-feed page-weigou-feed-index">
+    <div class="ui-row">
+         <div class="ui-feed-box ">
+            <div class="ui-feed-box-hd">
+                新手引导
+            </div>
+            <div class="ui-feed-box-bd">
+                <p>查看FEED平台使用帮助文档，请点击<a href="/data/getCommonFile">这里</a>。</p>
+                <p>开始提交FEED源，请点击<a href="#/feed/set">这里</a>，并按页面提示进行操作。</p>
+            </div>
+        </div>
+    </div>
+   
+    <div class="ui-row">
+        <div class="ui-col-2">
+            <div class="ui-feed-box ui-half-box feed-intro">
+                <div class="ui-feed-box-hd">
+                    商家信息
+                </div>
+                <div class="ui-feed-box-bd">
+                    <div class="ui-col-3">
+                        <div class="info">
+                            <div class="info-hd">
+                                账户名称
+                            </div>
+                            <div class="info-bd" id="feed-info-1">
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="ui-col-3">
+                        <div class="info">
+                            <div class="info-hd">
+                                商家名称
+                            </div>
+                            <div class="info-bd" id="feed-info-2">
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="ui-col-3">
+                        <div class="info">
+                            <div class="info-hd">
+                                商家状态
+                            </div>
+                            <div class="info-bd" id="feed-info-3">
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ui-col-2 ">
+            <div class="ui-feed-box announce-box">
+                <div class="ui-feed-box-hd">
+                    <!-- if: ${anList.length} -->
+                    <a href="javascript:;" data-id="${content.id}" class="more" >查看更多</a>
+                    <!-- /if -->
+                    系统公告
+                    
+                </div>
+                <div class="ui-feed-box-bd">
+                    <ul class="announce-list">
+                        <!-- if: ${anList.length} -->
+                            <!-- for: ${anList} as ${content} -->
+                                <li>
+                                    <span class="date">${content.time}</span>
+                                 
+                                    <a href="javascript:;" data-id="${content.id}" class="announce" >${content.title}</a>
+                                    <div class="announce-content">
+                                        
+                                    </div>
+                                </li>
+                            <!-- /for -->
+                        <!-- else -->
+                            <li>
+                                <span class="date"></span>
+                               <span class="announce">&nbsp; </span>
+                                <div class="announce-content">
+                                    
+                                </div>
+                            </li>
+                            <li>
+                                <span class="date"></span>
+                               <span class="announce">暂无</span>
+                                <div class="announce-content">
+                                    
+                                </div>
+                            </li>
+                        <!-- /if -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+     
+    <div class="ui-row">
+         <div class="ui-feed-box">
+            <div class="ui-feed-box-hd">
+                FEED信息
+            </div>
+            <div class="ui-feed-box-bd">
+                <div class="feed-info">
+                    <div id="list-table" class="list-table" data-ui="type:Table;id:ListTable"></div>
+                </div>
+                <a href="#/feed/info" style="float:right">查看更多</a>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>

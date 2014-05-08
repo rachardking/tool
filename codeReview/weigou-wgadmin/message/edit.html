@@ -1,0 +1,52 @@
+<!-- target:MAIN_PAGE_wgadmin_message_edit -->
+<div class="wgadmin-message ac-wgadmin-message-edit">
+	<div class="progress">
+		<div class="progress-item progress-item-active" ui="type:Button;id:btnProgress1;skin:flat;">第一步：编辑消息</div>
+		<div class="progress-item " ui="type:Button;id:btnProgress2;skin:flat;">第二步：导入接收者</div>
+	</div>
+	<div ui="type:Form;id:form" class="jn-row">
+		<input type="text" name="id" ui="type:Hidden;id:id;value:@id;" />
+        <table class="jn-detail-form">
+            <tbody>
+                
+                <tr>
+                  <th><span class="require"></span>发布渠道</th>
+                  <td colspan="3">
+                    <div name='publishType' title="发布渠道" ui='type:Select;id:publishType;value:@publishType;width:213;datasource:@dsPublishType;skin:flat;rule:required'></div>
+                  </td>
+                </tr>
+                <tr>
+                  <th><span class="require"></span>消息名称</th>
+                  <td colspan="3">
+                    <input name="name" type="text" title="消息名称" ui="type:TextInput;id:name;width:215;value:@name;skin:flat;rule:required" />
+                  </td>
+                </tr>
+                <tr>
+                  <th><span class="require"></span>消息内容</th>
+                  <td colspan="3">
+					  <p class="notice red">
+						短信模式不支持富文本，系统将自动转换为纯文本
+					  </p>
+                      <div name="detail" title="商品详情" ui="type:RichTextInput;id:detail;config:@richTextConfig;multiline:1;width:800;height:600;rule:required;value:@detail;"></div>
+                    <!--   <textarea name="detail" id=""  ui="type:TextInput;id:detail2;config:@richTextConfig;width:800;height:160;rule:required;value:@detail;"></textarea> -->
+						<span class="jn-aux"></span>
+                  </td>
+                </tr>
+                <tr id="isTop">
+                  <th><span class="require"></span>是否置顶</th>
+                  <td colspan="3">
+					<div  name="isTop"  title="是否置顶" ui="type:RadioBoxGroup;id:isTop;value:true;datasource:@isTopDS;rule:required"></div>
+
+                  </td>
+                </tr>
+            </tbody>
+        </table>
+		<div class="line" style="padding-left:50px">
+            <div class="key">&nbsp;</div>
+            <div class="input">
+                <div ui="type:SubmitButton;id:btnSubmit;skin:flat;">保存</div>
+                <div ui="type:Button;id:btnCancel;skin:flat;">取消</div>
+            </div>
+        </div>
+	</div>
+</div>

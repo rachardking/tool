@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/app/ecom/weigou/!svn/ver/37254/trunk/ic/ic-daoliu/daoliu-web/src/main/web-fe/dep/er/3.0.3/src
+END
+events.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/app/ecom/weigou/!svn/ver/35019/trunk/ic/ic-daoliu/daoliu-web/src/main/web-fe/dep/er/3.0.3/src/events.js
+END
+config.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/app/ecom/weigou/!svn/ver/35019/trunk/ic/ic-daoliu/daoliu-web/src/main/web-fe/dep/er/3.0.3/src/config.js
+END
+View.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/app/ecom/weigou/!svn/ver/35019/trunk/ic/ic-daoliu/daoliu-web/src/main/web-fe/dep/er/3.0.3/src/View.js
+END
+template.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/app/ecom/weigou/!svn/ver/37379/trunk/ic/ic-daoliu/daoliu-web/src/main/web-fe/dep/er/3.0.3/src/template.js
+END
+Action.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/app/ecom/weigou/!svn/ver/35019/trunk/ic/ic-daoliu/daoliu-web/src/main/web-fe/dep/er/3.0.3/src/Action.js
+END
+util.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/app/ecom/weigou/!svn/ver/35019/trunk/ic/ic-daoliu/daoliu-web/src/main/web-fe/dep/er/3.0.3/src/util.js
+END
+Deferred.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/app/ecom/weigou/!svn/ver/35019/trunk/ic/ic-daoliu/daoliu-web/src/main/web-fe/dep/er/3.0.3/src/Deferred.js
+END
+router.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/app/ecom/weigou/!svn/ver/35019/trunk/ic/ic-daoliu/daoliu-web/src/main/web-fe/dep/er/3.0.3/src/router.js
+END
+controller.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/app/ecom/weigou/!svn/ver/35019/trunk/ic/ic-daoliu/daoliu-web/src/main/web-fe/dep/er/3.0.3/src/controller.js
+END
+ajax.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/app/ecom/weigou/!svn/ver/35476/trunk/ic/ic-daoliu/daoliu-web/src/main/web-fe/dep/er/3.0.3/src/ajax.js
+END
+main.js
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/app/ecom/weigou/!svn/ver/35019/trunk/ic/ic-daoliu/daoliu-web/src/main/web-fe/dep/er/3.0.3/src/main.js
+END
+Observable.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/app/ecom/weigou/!svn/ver/35019/trunk/ic/ic-daoliu/daoliu-web/src/main/web-fe/dep/er/3.0.3/src/Observable.js
+END
+permission.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/app/ecom/weigou/!svn/ver/37254/trunk/ic/ic-daoliu/daoliu-web/src/main/web-fe/dep/er/3.0.3/src/permission.js
+END
+datasource.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/app/ecom/weigou/!svn/ver/35019/trunk/ic/ic-daoliu/daoliu-web/src/main/web-fe/dep/er/3.0.3/src/datasource.js
+END
+tpl.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/app/ecom/weigou/!svn/ver/35019/trunk/ic/ic-daoliu/daoliu-web/src/main/web-fe/dep/er/3.0.3/src/tpl.js
+END
+Model.js
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/app/ecom/weigou/!svn/ver/35019/trunk/ic/ic-daoliu/daoliu-web/src/main/web-fe/dep/er/3.0.3/src/Model.js
+END
+assert.js
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/app/ecom/weigou/!svn/ver/35019/trunk/ic/ic-daoliu/daoliu-web/src/main/web-fe/dep/er/3.0.3/src/assert.js
+END
+URL.js
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/app/ecom/weigou/!svn/ver/35019/trunk/ic/ic-daoliu/daoliu-web/src/main/web-fe/dep/er/3.0.3/src/URL.js
+END
+locator.js
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/app/ecom/weigou/!svn/ver/35019/trunk/ic/ic-daoliu/daoliu-web/src/main/web-fe/dep/er/3.0.3/src/locator.js
+END

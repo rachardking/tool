@@ -1,0 +1,28 @@
+<!-- target:MAIN_PAGE_wgadmin_message_recipient_list -->
+<div class="wgadmin-message ac-wgadmin-message-recipient-list">
+	<div class="progress">
+		<div class="progress-item " ui="type:Button;id:btnProgress1;skin:flat;">上一步：编辑消息</div>
+		<div class="progress-item progress-item-active" ui="type:Button;id:btnProgress2;skin:flat;">第二步：导入接收者</div>
+	</div>
+	<div ui="type:Form;id:form" >
+		 <input type="text" name="messageId" ui="type:Hidden;id:messageId;value:@messageId;"/>
+	</div>
+    <div class="wgadmin-body-wrapper">	
+		
+        <div class="table-row mai-row">
+			 <div class="list-operation">
+				<div ui="type:Button;id:inportSys;skin:flat;">从系统导入</div>
+				<div ui="type:Button;id:inportOut;skin:flat;">从外部导入</div>
+				<div ui="type:Button;id:deleteBtn;skin:flat;">删除</div>
+				
+			</div>
+            <div ui="type:PagableList;id:list;fields:@Fields;skin:wgadmin;pageNo:@pageNo;pageSize:@pageSize;order:@order;orderBy:@orderBy"></div>
+			
+		</div>
+		
+    </div>
+	<div class="clear" style="width:200px;margin:0 auto;margin-top:10px">
+			
+			<div ui="type:Button;id:returnBtn;skin:flat;">回消息列表</div>
+		</div>
+</div>

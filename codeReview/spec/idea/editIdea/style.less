@@ -1,0 +1,87 @@
+.idea-editIdea {
+
+    @form-width: 344px;
+
+    position: relative;
+
+    .clearfix;
+
+    .ui-levelselector .ui-select {
+        margin-left: @grid-gap;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    .idea-section {
+        > h5 {
+            display: block;
+            font-weight: bold;
+            margin-bottom: @grid-gap-small;
+        }
+        > .title {
+            color: #7F7F7F;
+        }
+    }
+    .idea-form {
+        background-color: darken(@bgcolor-secondary, 4%);
+        float: left;
+        padding: @grid-gap;
+        width: @form-width;
+        box-shadow: inset -2px 0px 5px #E4E4E4;
+
+        .idea-section {
+            margin-bottom: 2 * @grid-gap;
+        }
+    }
+    .ui-validity {
+        margin-top: @grid-gap-small;
+        white-space: normal;
+    }
+    
+    .btn-wildcard {
+        margin-top: @grid-gap-small;
+    }
+
+    .idea-preview {
+        border-left: 1px solid #DDD;
+        background-color: @bgcolor-secondary;
+
+        padding: @grid-gap;
+
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: @form-width + 2 * @grid-gap;
+        right: 0;
+
+        .idea-section {
+            margin-top: 2 * @grid-gap;
+
+            > h5 {
+                color: @color-title;
+            }
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+    .preview-tip {
+        position: absolute;
+        width: 96%;
+        bottom: 10px;
+        left: 10px;
+        line-height: 24px;
+        .note {
+            color: #7F7F7F;
+            border-bottom: 1px solid #ccc;
+        }
+        .contact {
+            color: #999;
+        }
+    }
+}
+.skin-idea-edit-dialog .ui-dialog-body {
+    padding: 0;
+}

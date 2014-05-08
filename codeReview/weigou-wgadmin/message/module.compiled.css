@@ -1,0 +1,96 @@
+/***************************************************************************
+ * 
+ * Copyright (c) 2014 Baidu.com, Inc. All Rights Reserved
+ * $Id: module.less 120752 2012-04-05 14:38:54Z  $ 
+ * 
+ **************************************************************************/
+/**
+ * src/wgadmin/message/module.less ~ 2014/01/15 10:32:11
+ * @author jinzhiwei@baidu.com (jinzhiwei)
+ * @version $Revision: 120752 $ 
+ * @description 
+ * wgadmin.message less file
+ **/
+.wgadmin-message .wgadmin-form-wrapper {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 15px;
+  padding-bottom: 5px;
+}
+.wgadmin-message .wgadmin-tip-wrapper {
+  background-color: #FEF6F1;
+  border: 1px solid #F7E1CF;
+  padding: 15px;
+}
+.wgadmin-message .control-group {
+  float: left;
+  height: 30px;
+  width: 320px;
+  line-height: 25px;
+  margin-bottom: 10px;
+  margin-right: 11px;
+}
+.wgadmin-message .control-group.right {
+  float: right;
+}
+.wgadmin-message .control-group label {
+  /*width: 60px;*/
+
+  height: 25px;
+  text-align: right;
+  float: left;
+}
+.wgadmin-message .control-group .controls {
+  float: left;
+}
+.wgadmin-message .control-group .controls.validate-error {
+  padding: 0;
+}
+.wgadmin-message .control-group input {
+  width: 250px;
+  float: left;
+  /*line-height: 25px;*/
+
+}
+.wgadmin-message .control-group span.sp {
+  padding: 0 6px;
+  float: left;
+}
+.wgadmin-message .clear {
+  clear: both;
+}
+.wgadmin-message .wgadmin-body-wrapper {
+  margin-top: 10px;
+  border: 1px solid #eee;
+  background-color: white;
+  padding-top: 10px;
+}
+.wgadmin-message .cat-select-row {
+  padding-top: 10px;
+  padding-left: 15px;
+  height: 50px;
+}
+.wgadmin-message .table-row {
+  padding: 0 15px;
+  margin-top: 10px;
+}
+.wgadmin-message .tab-row {
+  border-bottom: 1px solid #eee;
+}
+.wgadmin-message .operation-row {
+  padding: 10px 15px;
+  padding-bottom: 0;
+}
+.wgadmin-message .progress-item {
+  background: #fff;
+  color: #000;
+}
+.wgadmin-message .progress-item .ui-button-label {
+  width: 450px;
+  text-align: center;
+}
+.wgadmin-message .progress-item-active {
+  background: #d91c27;
+  color: #fff;
+}
+/* vim: set ts=4 sw=4 sts=4 tw=100 noet: */

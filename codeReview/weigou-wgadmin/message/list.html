@@ -1,0 +1,55 @@
+<!-- target:MAIN_PAGE_wgadmin_message_list -->
+<div class="wgadmin-message ac-wgadmin-message-list">
+	<div class="wgadmin-form-wrapper ">
+		<div ui="type:Form;id:formSearch" >
+			<div class="control-group" >
+				<label class="control-label">消息名称：</label>
+				<div class="controls">
+				   <input name="name"  ui="type:TextInput;value:@messageName;id:messageName;"  />
+				</div>
+			</div>
+			<div class="control-group" >
+				<label class="control-label">创建时间：</label>
+				<div class="controls">
+				  <div title="日期" ui="type:MultiCalendar;id:dateRange;range:@dateRange;value:@dateValue;skin:weimai"></div> 
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="control-group" >
+				<label class="control-label">发布渠道：</label>
+				<div class="controls">
+				   <div name="publishType"  ui="type:Select;id:publishType;value:@publishType;datasource:@dsPublishType;skin:flat;width:248"></div>
+				</div>
+			</div>
+			<div class="control-group" style="width:400px">
+				<label class="control-label">消息状态：</label>
+				<div class="controls">
+				  
+				    <div name="statusType"  ui="type:Select;id:statusType;value:@statusType;datasource:@dsStatusType;skin:flat;width:250"></div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div class="control-group" style="width:80px;">
+				<label class="control-label"></label>
+				<div class="controls">
+					<div ui="type:SubmitButton;id:searchSubmit;skin:flat">查询</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			
+		</div>
+	</div>
+
+    <div class="wgadmin-body-wrapper">		
+        <div class="table-row mai-row">
+			 <div class="list-operation" style="overflow:hidden">
+				<div ui="type:Button;id:downloadBtn;skin:flat;">接收者下载列表</div>
+				<div ui="type:Button;id:publishBtn;skin:flat;">发布</div>
+				<div ui="type:Button;id:deleteBtn;skin:flat;">删除</div>
+				<div ui="type:Button;id:createBtn;skin:flat-create;">新建</div>
+				
+			</div>
+            <div ui="type:PagableList;id:list;fields:@Fields;skin:wgadmin;pageNo:@pageNo;pageSize:@pageSize;order:@order;orderBy:@orderBy"></div>
+        </div>
+    </div>
+</div>

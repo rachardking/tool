@@ -1,0 +1,11 @@
+<!-- target:MAIN_PAGE_wgadmin_message_task_list_form -->
+<div class="wgadmin-message ac-wgadmin-message-task-list-form">
+    <div ui="type:Form;id:form">
+        <input type="text" name="type" ui="type:Hidden;id:type;value:mes;"/>
+    </div>
+    <div ui="type:PagableList;pageSize:@pageSize;pageNo:@pageNo;orderBy:createtime;order:desc;id:taskList;fields:@taskListFields;select:none;"></div>
+    <div class="operation">
+        <div ui="type:Button;id:refreshBtn;">刷新</div>
+        <div ui="type:Button;id:closeBtn;">关闭</div>
+    </div>
+</div>

@@ -1,0 +1,59 @@
+<!-- target:MAIN_PAGE_wgadmin_message_merchant_list -->
+<div class="wgadmin-message ac-wgadmin-message-merchant-list">
+    <div class="wgadmin-form-wrapper ">
+		<div ui="type:Form;id:form" >
+			<input type="text" name="subStatus" ui="type:Hidden;id:subStatus;value:-1;" />
+			<div class="control-group" >
+				<label class="control-label"><div name="type" ui="type:Select;id:filterType;width:120;value:@filterTypeValue;datasource:@filterTypeList"></div></label>
+				<div class="controls" style="padding-left:20px">
+				     <input name="keyword" type="text" ui="type:TextInput;id:filterKeyword;width:150;value:@filterKeywordValue;" />
+				</div>
+			</div>
+			 <div class="control-group" style="width:200px">
+				<label class="control-label">接入方式 ： </label>
+				<div class="controls">
+				  <div name="enterType" ui="type:Select;id:enterType;width:120;value:@enterType;datasource:@enterTypeDS"></div>
+				</div>
+			</div>
+			
+			 <div class="control-group" style="width:200px">
+				<label class="control-label">状态筛选 ： </label>
+				<div class="controls">
+				  <div name="status" ui="type:Select;id:filterStatus;width:120;value:@filterStatusValue;datasource:@filterStatusList"></div>
+				</div>
+			</div>
+			
+			
+			
+			<div class="control-group" style="width:200px" >
+				<label class="control-label">类目：</label>
+				<div class="controls">
+					<div name="categoryId" ui="type:Select;id:categoryId;width:120;value:@categoryIdValue;datasource:@categoryIdDS;rule:required"></div>
+				</div>
+			</div>
+			
+			
+			<div class="control-group" style="width:80px;">
+				<label class="control-label"></label>
+				<div class="controls">
+					<div ui="type:SubmitButton;id:searchSubmit;skin:flat">查询</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+			
+		</div>
+	</div>
+
+    <div class="wgadmin-body-wrapper">		
+        <div class="table-row mai-row">
+			 <div class="list-operation">
+				<div ui="type:Button;id:inportBtn;skin:flat;">导入选中商家</div>
+				<div ui="type:Button;id:inpotAllBtn;skin:flat;">导入满足条件所有商家</div>
+				
+			</div>
+            <div ui="type:PagableList;id:list;fields:@Fields;skin:wgadmin;pageNo:@pageNo;pageSize:@pageSize;order:@order;orderBy:@orderBy"></div>
+        </div>
+    </div>
+	
+</div>
+

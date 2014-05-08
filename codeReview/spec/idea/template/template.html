@@ -1,0 +1,31 @@
+<!-- target: idea_template_title -->
+<div class="idea-preview-tpl idea-preview-title-tpl">
+    <a class="idea-title" data-placeholder="创意标题" data-role="url" data-cut="50" href="${url}" target="_blank">
+        <!-- if: ${title} -->
+        ${title|raw}
+        <!-- else -->
+        创意标题
+        <!-- /if -->
+    </a>
+    <p class="org-name">
+        ${orgName}
+    </p>
+</div>
+
+<!-- target: idea_template_detail -->
+<div class="idea-preview-tpl idea-preview-detail-tpl">
+    <a class="idea-title" data-placeholder="创意标题" data-role="url" data-cut="50" href="${url}" target="_blank">
+        <!-- if: ${title} -->
+        ${title|raw}
+        <!-- else -->
+        创意标题
+        <!-- /if -->
+    </a>
+    <p class="idea-desc" data-placeholder="创意描述" data-cut="190">
+        <!-- if: ${desc} -->
+        ${desc|raw}
+        <!-- else -->
+        创意描述
+        <!-- /if -->
+    </p>
+</div>

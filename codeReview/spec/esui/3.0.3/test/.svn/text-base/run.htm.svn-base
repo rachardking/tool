@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Jasmine Spec Runner</title>
+
+    <link rel="stylesheet" href="asset/css/jasmine.css">
+    <script src="asset/js/jasmine.js"></script>
+    <script src="asset/js/jasmine-html.js"></script>
+    <script src="matchers.js"></script>
+    <script src="asset/js/esl.js"></script>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script>
+        require.config({
+            paths: {
+                'css': 'asset/js/css'
+            },
+            packages: [
+                {
+                    name: 'esui',
+                    location: '../src',
+                    main: 'main'
+                }
+            ]
+        });
+    </script>
+    <script>
+        function dispatchEvent(element, type, properties) {
+            if (typeof document.createEvent === 'function') {
+                var event = document.createEvent('Event');
+                event.initEvent(type, true, false);
+                for (var key in properties) {
+                    if (properties.hasOwnProperty(key)) {
+                        event[key] = properties[key];
+                    }
+                }
+                element.dispatchEvent(event);
+            }
+            else {
+                var event = document.createEventObject();
+                for (var key in properties) {
+                    if (properties.hasOwnProperty(key)) {
+                        event[key] = properties[key];
+                    }
+                }
+                element.fireEvent('on' + type, event);
+            }
+        }
+
+        function getText(element) {
+            return element.textContent || element.innerText;
+        }
+
+        function hasAttribute(element, name) {
+            return element.hasAttribute
+                ? element.hasAttribute(name)
+                : (element.attributes[name] && element.attributes[name].specified);
+        }
+        
+        var suits = [
+            'esui', 'controlHelper', 'ViewContext', 'Validity', 'Control', 'InputControl',
+            'Label', 'Panel', 'Select', 'Form', 'Tab', 'Crumb', 'Wizard', 'TextBox',
+            'extension/CustomData', 'extension/Command'
+        ];
+        require(
+            suits,
+            function(esui) {
+                afterEach(function () {
+                    var container = document.getElementById('container');
+                    esui.getViewContext().clean();
+                    container.innerHTML = '';
+                });
+
+                var jasmineEnv = jasmine.getEnv();
+                jasmineEnv.updateInterval = 1000;
+
+                var htmlReporter = new jasmine.HtmlReporter();
+
+                jasmineEnv.addReporter(htmlReporter);
+
+                jasmineEnv.specFilter = function(spec) {
+                    return htmlReporter.specFilter(spec);
+                };
+
+                var currentWindowOnload = window.onload;
+
+                window.onload = function() {
+                    if (currentWindowOnload) {
+                        currentWindowOnload();
+                    }
+                    execJasmine();
+                };
+
+                function execJasmine() {
+                    jasmineEnv.execute();
+                }
+            }
+        );
+    </script>
+</body>
+</html>

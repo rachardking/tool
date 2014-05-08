@@ -1,0 +1,118 @@
+/**
+ * ESUI (Enterprise Simple UI)
+ * Copyright 2013 Baidu Inc. All rights reserved.
+ * 
+ * @file 单行、文本框样式
+ * @author erik, zhaolei
+ */
+@import "mixin.less";
+@import "variable.less";
+.ui-textbox {
+    position: relative;
+    display: inline-block;
+    *display: inline;
+
+    @paddingVertical: 2px;
+    @paddingHorizon: 4px;
+    @borderWidth: 1px;
+
+    input, textarea {
+        color: #333;
+        padding: @paddingVertical @paddingHorizon;
+        font-size: 13px;
+        background: #FFF;
+        border: @borderWidth solid #a8adb6;
+        height: 19px;
+        line-height: 19px;
+        width: 200px;
+        .box-sizing(content-box);
+        background-image: -webkit-gradient(linear, 0 0, 0 2, from(#ececec), to(#fff));
+        background-image: -moz-linear-gradient(top, #ececec, #fff 2px, #fff);
+        &:focus {
+            outline: 0;
+        }
+        &:hover {
+            border: 1px solid #6e8ab8;
+        }
+    }
+    textarea {
+        height: 200px;
+        overflow: auto;
+        resize: none;
+    }
+
+    .ui-textbox-hint {
+        .inline-block ();
+        .box-sizing (content-box);
+        background-color: #f2f2f2;
+        padding: @paddingVertical 12px;
+        border: 1px solid #a8adb6;
+        vertical-align: top;
+        height: 19px;
+        line-height: 19px;
+    }
+
+    .ui-textbox-placeholder {
+        color: #999;
+        position: absolute;
+        height: 19px;
+        line-height: 19px;
+        left: 3px;
+        top: @paddingVertical + @borderWidth;
+    }
+
+    .ui-textbox-placeholder-hidden {
+        display: none;
+    }
+}
+
+.ui-textbox-hint-suffix {
+    .ui-textbox-hint {
+        border-left: 0;
+    }
+}
+.ui-textbox-hint-prefix {
+    .ui-textbox-hint {
+        border-right: 0;
+    }
+}
+
+.ui-textbox-disabled,
+.ui-textbox-read-only {
+    input, textarea {
+        border: 1px solid #7E9DB9;
+        background: #f6f6f6;
+        color: #999;
+    }
+}
+
+
+/** 验证 */
+.ui-textbox-validity-label,
+.ui-textarea-validity-label {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+    color: #CC0000;
+    padding-left: 10px;
+}
+
+.ui-textbox-validity-label-notice,
+.ui-textarea-validity-label-notice {
+    color: #FF0000;
+}
+
+.ui-textbox-validity-label-warn,
+.ui-textarea-validity-label-warn {
+    color: red;
+}
+
+.ui-textbox-validity-label-invalid,
+.ui-textarea-validity-label-invalid {
+    color: #CC0000;
+}
+
+.ui-textbox-validity-invalid input,
+.ui-textbox-validity-invalid textarea {
+    border: 1px solid red;
+}

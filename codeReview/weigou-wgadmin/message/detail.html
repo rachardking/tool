@@ -1,0 +1,63 @@
+<!-- target:MAIN_PAGE_wgadmin_message_detail -->
+<div class="wgadmin-message ac-wgadmin-message-detail">
+    <div class="wgadmin-form-wrapper ">
+        <div ui="type:Form;id:form">
+            <input type="text" name="messageId" ui="type:Hidden;id:id;value:@id;"/>
+        </div>
+        <table class="jn-detail-form">
+            <tbody>
+                <tr>
+                    <th>
+                        发布渠道
+                    </th>
+                    <td colspan="3">
+                        <div name='publishType' title="发布渠道" ui='type:Label;id:publishType;text:@publishType;skin:flat;'>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th> 
+                        消息名称
+                    </th>
+                    <td colspan="3">
+                        <div name="name" type="text" title="消息名称" ui="type:Label;id:name;text:@name;skin:flat;">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        消息内容
+                    </th>
+                    <td colspan="3">
+                        <div name="detail" title="商品详情" ui="type:Label;id:detail;text:@detail;">
+                        </div>
+                        <span class="jn-aux">
+                        </span>
+                    </td>
+                </tr>
+                <tr id="isTop">
+                    <th>
+                        <span class="require">
+                        </span>
+                        是否置顶
+                    </th>
+                    <td colspan="3">
+                        <div type="checkbox" name="isTop" ui="type:Label;id:isTop;text:@isTop;">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="wgadmin-body-wrapper">
+        <div class="table-row mai-row">
+            <div class="list-operation">
+                <div ui="type:Button;id:downloadBtn;skin:flat;">
+                    下载  
+                </div>
+            </div>
+            <div ui="type:PagableList;id:list;fields:@Fields;skin:wgadmin;pageNo:@pageNo;pageSize:@pageSize;order:@order;orderBy:@orderBy">
+            </div>
+        </div>
+    </div>
+</div>
