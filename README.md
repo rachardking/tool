@@ -1,4 +1,5 @@
-采用er框架以及esui
+采用er框架以及esui：
+
 .
 └── feed（微购feed平台）
         ├── dep（依赖库）
@@ -13,3 +14,4 @@
                 ├── xxx.tpl.html
                 ├── xxxModel.js
                 └── xxxView.js
+                
